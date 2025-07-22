@@ -1,6 +1,7 @@
 package com.company;
 
 
+import java.util.Objects;
 import java.util.Scanner;
 
 public class loops_conditional {
@@ -71,12 +72,25 @@ public class loops_conditional {
          */
 
         //question 4
+        /*
         Scanner sc = new Scanner(System.in);
         int number = sc.nextInt();
         if (number % 400==0){
             System.out.println("Its a leap year ");
         }else {
             System.out.println("It is not a leap year");
+        }
+         */
+
+        //question 5
+        Scanner sc = new Scanner(System.in);
+        String  a = sc.nextLine();
+        if(a.endsWith(".com")){
+            System.out.println("It is a commercial website .");
+        } else if (a.endsWith(".org")) {
+            System.out.println("It is an organisation website");
+        }else if (a.endsWith(".in")) {
+            System.out.println("It is an indian website");
         }
     }
 }
