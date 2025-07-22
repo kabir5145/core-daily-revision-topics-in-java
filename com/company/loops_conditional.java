@@ -16,6 +16,7 @@ public class loops_conditional {
          */
 
         //question 2
+        /*
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the marks obtained in maths : ");
         double m = sc.nextDouble();
@@ -34,5 +35,37 @@ public class loops_conditional {
         }else {
             System.out.println("YOU HAVE PASSED THE EXAM!");
         }
+         */
+
+        //question 3
+        Scanner sc = new Scanner(System.in);
+        char operator = sc.next().charAt(0);
+        String result = "0" ;
+        switch (operator){
+            case '1':
+                result = "mon";
+                break;
+            case '2':
+                result = "tues";
+                break;
+            case '3':
+                result = "wed";
+                break;
+            case '4':
+                result = "thurs";
+                break;
+            case'5':
+               result="fri";
+                break;
+            case '6':
+                result = "sat";
+                break;
+            case '7':
+               result = "sun";
+                break;
+            default:
+                System.out.println("Enjoy your day");
+        }
+        System.out.println("The day of the week is :"+result);
     }
 }
