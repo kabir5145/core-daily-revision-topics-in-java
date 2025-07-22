@@ -38,6 +38,7 @@ public class loops_conditional {
          */
 
         //question 3
+        /*
         Scanner sc = new Scanner(System.in);
         char operator = sc.next().charAt(0);
         String result = "0" ;
@@ -67,5 +68,15 @@ public class loops_conditional {
                 System.out.println("Enjoy your day");
         }
         System.out.println("The day of the week is :"+result);
+         */
+
+        //question 4
+        Scanner sc = new Scanner(System.in);
+        int number = sc.nextInt();
+        if (number % 400==0){
+            System.out.println("Its a leap year ");
+        }else {
+            System.out.println("It is not a leap year");
+        }
     }
 }
