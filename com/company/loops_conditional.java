@@ -83,6 +83,7 @@ public class loops_conditional {
          */
 
         //question 5
+        /*
         Scanner sc = new Scanner(System.in);
         String  a = sc.nextLine();
         if(a.endsWith(".com")){
@@ -91,6 +92,19 @@ public class loops_conditional {
             System.out.println("It is an organisation website");
         }else if (a.endsWith(".in")) {
             System.out.println("It is an indian website");
+        }
+         */
+
+        //question 6
+        int n = 3;
+        int f = 1;
+        int g = 0;
+        for(int i = 0;i<=n;i++){
+            for(int k = 0 ;k<=i;k++){
+                System.out.print(g);
+                g=f++;
+            }
+            System.out.println();
         }
     }
 }
