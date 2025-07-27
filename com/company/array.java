@@ -25,11 +25,23 @@ public class array {
          */
 
         //question 2: sum all values in an array
+        /*
         int [] num = {12,34,45};
         int sum = 0;
         for(int i :num)
             sum += i;
         System.out.println("The sum of an array is : "+sum);
+         */
+
+        //question 3: print 10*10 grid of dashes
+
+        int [][] matrix = new int[10][10];
+        for(int i = 0;i< 10;i++){
+            for(int k = 0;k<10;k++) {
+                System.out.print("-");
+            }
+            System.out.println();
+        }
     }
 }
 
