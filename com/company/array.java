@@ -34,7 +34,7 @@ public class array {
          */
 
         //question 3: print 10*10 grid of dashes
-
+/*
         int [][] matrix = new int[10][10];
         for(int i = 0;i< 10;i++){
             for(int k = 0;k<10;k++) {
@@ -42,6 +42,16 @@ public class array {
             }
             System.out.println();
         }
+ */
+
+        //question 4: Calculate average of array elements
+        int [] avg = {12,45,23};
+        int average =0;
+        for(int i = 0;i<avg.length;i++){
+            average = average + avg[i];
+        }
+        double av = average/avg.length;
+        System.out.println("The average of the numbers are : "+av );
     }
 }
 
