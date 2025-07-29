@@ -1,6 +1,7 @@
 package com.company;
 
 import java.util.Arrays; // Import required to use Arrays.toString
+import java.util.Scanner;
 
 public class array {
     public static void main(String[] args) {
@@ -45,6 +46,7 @@ public class array {
  */
 
         //question 4: Calculate average of array elements
+        /*
         int [] avg = {12,45,23};
         int average =0;
         for(int i = 0;i<avg.length;i++){
@@ -52,6 +54,25 @@ public class array {
         }
         double av = average/avg.length;
         System.out.println("The average of the numbers are : "+av );
+         */
+
+        //question 5: Check if an array contains a specific value
+        Scanner sc = new Scanner(System.in);
+        int [] numbers = {12,34,21,22,3};
+        System.out.println("Insert a number -->");
+        int find = sc.nextInt();
+        boolean found = false;
+        for (int i = 0;i<numbers.length;i++){
+            if(numbers[i]==find){
+                found = true;
+                break;
+            }
+        }
+        if(found){
+            System.out.println("Yes ! We have found the number.");
+        }else {
+            System.out.println("Oops ! That is a wrong number.");
+        }
     }
 }
 
