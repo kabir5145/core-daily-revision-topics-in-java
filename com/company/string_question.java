@@ -13,9 +13,11 @@ public class string_question {
          */
 
         //question 2: get character at index
+        /*
         String s = "google company";
         System.out.println(s);
         System.out.println(s.charAt(0));
         System.out.println(s.charAt(9));
+         */
     }
 }

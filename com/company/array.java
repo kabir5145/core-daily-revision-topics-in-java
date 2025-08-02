@@ -1,10 +1,9 @@
 package com.company;
 
-import java.util.Arrays; // Import required to use Arrays.toString
 import java.util.Scanner;
 
 public class array {
-    public static void main(String[] args) {
+    public static void main(String[] args ) {
         // Question 1: Write a Java program to sort a numeric array and a string array
         /*
         int[] number = {1, 5, 7, 3, 4, 9, 10};
@@ -57,6 +56,7 @@ public class array {
          */
 
         //question 5: Check if an array contains a specific value
+        /*
         Scanner sc = new Scanner(System.in);
         int [] numbers = {12,34,21,22,3};
         System.out.println("Insert a number -->");
@@ -73,6 +73,23 @@ public class array {
         }else {
             System.out.println("Oops ! That is a wrong number.");
         }
+         */
+
+        //question 6: Given a 2D integer array mat[][] and a number x,
+        // find whether element x is present in the matrix or not.
+        Scanner sc = new Scanner(System.in) ;
+        int x=0;
+        int n = 0;
+        int m = 0;
+        int  [][] mat = new int[n][m];
+        boolean found = false;
+      for(int i = 0;i<mat.length;i++){
+          for(int k = 0;k<mat[i].length;k++) {
+              if (mat[i][k] == x) {
+                  found = true;
+              }
+          }
+      }
+      found= false;
     }
 }
-
