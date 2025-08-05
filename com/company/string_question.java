@@ -19,5 +19,15 @@ public class string_question {
         System.out.println(s.charAt(0));
         System.out.println(s.charAt(9));
          */
+
+        //question 3: pattern questions
+        //1
+        int a = 5;
+        for(int i = 0;i<=a;i++){
+            for(int k = 0;k<=a;k++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
     }
 }
