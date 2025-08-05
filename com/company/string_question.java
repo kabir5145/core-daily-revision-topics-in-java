@@ -22,10 +22,25 @@ public class string_question {
 
         //question 3: pattern questions
         //1
-        int a = 5;
+        /*int a = 5;
         for(int i = 0;i<=a;i++){
             for(int k = 0;k<=a;k++){
                 System.out.print("*");
+            }
+            System.out.println();
+        }
+         */
+
+        //2
+        int n = 4;
+        int m = 5;
+        for(int i = 0;i<n;i++){
+            for(int k = 0;k<m;k++){
+               if(i ==0 ||i ==n-1 ||k ==0 || k==m-1){
+                   System.out.print("*");
+               }else {
+                   System.out.print(" ");
+               }
             }
             System.out.println();
         }
