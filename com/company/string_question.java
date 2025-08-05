@@ -47,6 +47,7 @@ public class string_question {
          */
 
         //3
+        /*
         int n = 5;
         for(int i = 0;i<=n;i++){
             for(int k = 0;k <=i;k++){
@@ -55,5 +56,6 @@ public class string_question {
             }
             System.out.println();
         }
+         */
     }
 }
