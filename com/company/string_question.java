@@ -32,7 +32,7 @@ public class string_question {
          */
 
         //2
-        int n = 4;
+        /*int n = 4;
         int m = 5;
         for(int i = 0;i<n;i++){
             for(int k = 0;k<m;k++){
@@ -41,6 +41,17 @@ public class string_question {
                }else {
                    System.out.print(" ");
                }
+            }
+            System.out.println();
+        }
+         */
+
+        //3
+        int n = 5;
+        for(int i = 0;i<=n;i++){
+            for(int k = 0;k <=i;k++){
+                System.out.print("*");
+                System.out.print(" ");
             }
             System.out.println();
         }
