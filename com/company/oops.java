@@ -1,5 +1,6 @@
 package com.company;
 
+/*
 class question_2{
     public String name;
     public int age;
@@ -19,6 +20,7 @@ class question_2{
         this.age = age;
     }
 }
+ */
 /*
 class question_1{
     public String name;
@@ -52,11 +54,12 @@ public class oops {
         s.setName("raghav");
         System.out.println(s.getName);
          */
-
+/*
         question_2 s = new question_2();
         s.setAge(3);
         s.setName("booz");
         System.out.println(s.getAge()+s.getName());
+ */
         }
     }
 

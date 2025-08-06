@@ -57,5 +57,14 @@ public class string_question {
             System.out.println();
         }
          */
+
+        //4
+        int a = 5;
+        for(int i = a;i>1;i--){
+            for(int k = 1;k<i;k++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
     }
 }
