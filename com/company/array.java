@@ -108,7 +108,7 @@ public class array {
         //question 8 : Copy array using iteration
         int [] num ={12,23,21,44,54,33};
         int []copy = Arrays.copyOf(num,num.length);
-        for(int i = 1;i< copy.length;i++){
+        for(int i = 0;i< copy.length;i++){
             System.out.println(copy[i]);
         }
         System.out.println("copied array is : "+Arrays.toString(copy));
