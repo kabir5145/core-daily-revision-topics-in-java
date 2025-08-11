@@ -96,11 +96,21 @@ public class array {
          */
 
         //question 7: Remove specific element from array
+        /*
         int [] number = {12,23,21,44,54,33};
         int remove = 1;
         for(int i = remove;i< number.length-1;i++){
             number[i] = number[i+1];
         }
         System.out.println("After removing the second element : "+Arrays.toString(number));
+         */
+
+        //question 8 : Copy array using iteration
+        int [] num ={12,23,21,44,54,33};
+        int []copy = Arrays.copyOf(num,num.length);
+        for(int i = 1;i< copy.length;i++){
+            System.out.println(copy[i]);
+        }
+        System.out.println("copied array is : "+Arrays.toString(copy));
     }
 }
