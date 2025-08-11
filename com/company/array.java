@@ -1,9 +1,10 @@
 package com.company;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class array {
-    public static void main(String[] args ) {
+    public static void main(String[] args) {
         // Question 1: Write a Java program to sort a numeric array and a string array
         /*
         int[] number = {1, 5, 7, 3, 4, 9, 10};
@@ -77,6 +78,7 @@ public class array {
 
         //question 6: Given a 2D integer array mat[][] and a number x,
         // find whether element x is present in the matrix or not.
+        /*
         Scanner sc = new Scanner(System.in) ;
         int x=0;
         int n = 0;
@@ -91,5 +93,14 @@ public class array {
           }
       }
       found= false;
+         */
+
+        //question 7: Remove specific element from array
+        int [] number = {12,23,21,44,54,33};
+        int remove = 1;
+        for(int i = remove;i< number.length-1;i++){
+            number[i] = number[i+1];
+        }
+        System.out.println("After removing the second element : "+Arrays.toString(number));
     }
 }
