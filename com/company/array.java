@@ -1,7 +1,7 @@
 package com.company;
 
 import java.util.Arrays;
-import java.util.Scanner;
+import java.util.OptionalInt;
 
 public class array {
     public static void main(String[] args) {
@@ -114,9 +114,13 @@ public class array {
         }
         System.out.println("copied array is : "+Arrays.toString(copy));
          */
-
+/*
         int[] num = {12,12,12};
         int total = Arrays.stream(num).sum();
         System.out.println("The sum of an array in a new way is :"+total);
+ */
+        int [] num = {1,32,65,97,54};
+        OptionalInt m = Arrays.stream(num).max();
+        System.out.println(m.getAsInt());
     }
 }
