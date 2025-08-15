@@ -119,8 +119,8 @@ public class array {
         int total = Arrays.stream(num).sum();
         System.out.println("The sum of an array in a new way is :"+total);
  */
-        int [] num = {1,32,65,97,54};
-        OptionalInt m = Arrays.stream(num).max();
-        System.out.println(m.getAsInt());
+//        int [] num = {1,32,65,97,54};
+//        OptionalInt m = Arrays.stream(num).max();
+//        System.out.println(m.getAsInt());
     }
 }

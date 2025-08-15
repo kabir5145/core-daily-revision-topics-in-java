@@ -59,12 +59,20 @@ public class string_question {
          */
 
         //4
-        int a = 5;
-        for(int i = a;i>1;i--){
-            for(int k = 1;k<i;k++){
-                System.out.print("*");
-            }
-            System.out.println();
-        }
+//        int a = 5;
+//        for(int i = a;i>1;i--){
+//            for(int k = 1;k<i;k++){
+//                System.out.print("*");
+//            }
+//            System.out.println();
+//        }
+
+        //question 2 : Get Unicode Code Point at index
+        String s = "W3resource.com";
+        System.out.println("Original String : "+s);
+        int value_1 = s.codePointAt(1);
+        int value_2 = s.codePointAt(9);
+        System.out.println("Character(unicode point) = "+value_1);
+        System.out.println("Character(unicode point) = "+value_2);
     }
 }
