@@ -68,10 +68,20 @@ public class string_question {
 //        }
 
         //question 2 : Get Unicode Code Point at index
+        /*
         String s = "W3resource.com";
         System.out.println("Original String : "+s);
         int value_1 = s.codePointAt(1);
         int value_2 = s.codePointAt(9);
+        System.out.println("Character(unicode point) = "+value_1);
+        System.out.println("Character(unicode point) = "+value_2);
+         */
+
+        //question 3: Get Unicode Code Point Before Index
+        String s = "W3resource.com";
+        System.out.println("Original String : "+s);
+        int value_1 = s.codePointBefore(1);
+        int value_2 = s.codePointBefore(9);
         System.out.println("Character(unicode point) = "+value_1);
         System.out.println("Character(unicode point) = "+value_2);
     }
