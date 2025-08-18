@@ -78,11 +78,19 @@ public class string_question {
          */
 
         //question 3: Get Unicode Code Point Before Index
+        /*
         String s = "W3resource.com";
         System.out.println("Original String : "+s);
         int value_1 = s.codePointBefore(1);
         int value_2 = s.codePointBefore(9);
         System.out.println("Character(unicode point) = "+value_1);
         System.out.println("Character(unicode point) = "+value_2);
+         */
+
+        //question 4: Count Points in Range
+        String s = "W3resource.com";
+        System.out.println("Original String : "+s);
+        int ctr = s.codePointCount(1,10);
+        System.out.println("Codepoint count : "+ctr);
     }
 }
