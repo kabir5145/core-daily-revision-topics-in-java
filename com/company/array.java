@@ -1,27 +1,26 @@
 package com.company;
 
 import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.OptionalInt;
-import java.util.Scanner;
+import java.util.*;
 
 public class array {
     public static void main(String[] args) {
-        //question 9 : Insert element at specific position
-        Scanner sc = new Scanner(System.in);
-        int [] a= {13,14,15,16,17};
-        System.out.println("Position of the number where you want to insert : ");
-        int insertPosition = sc.nextInt();
-        System.out.println("The new number is : ");
-        int newValue = sc.nextInt();
-        System.out.println("The new number to insert is : "+newValue);
-        System.out.println("The original array is : "+Arrays.toString(a));
+        //question 10 : Find max and min in an array
+        int[] arr = {19, 87, 66, 54, 44, 56, 65};
+        System.out.println("The original array is : " + Arrays.toString(arr));
+        int max = arr[0];
+        int min = arr[0];
 
-        for(int i= a.length-1;i>insertPosition;i--){
-            a[i]= a[i-1];
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+            if (arr[i] < min) {
+                min = arr[i];
+            }
         }
-        a[insertPosition]= newValue;
-        System.out.println("New array is : "+Arrays.toString(a));
+        System.out.println("The max array is : " + max);
+        System.out.println("The min array is : " + min);
+
     }
 }
