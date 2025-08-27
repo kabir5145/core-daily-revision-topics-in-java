@@ -5,32 +5,18 @@ import java.util.*;
 
 public class array {
     public static void main(String[] args) {
-        //question 16 : Remove duplicate from array.
-        int[] a = {12,13,14,15,16,16};
+        //question 17 : Find the second-largest number.
+        int []arr= {12,13,14,15,16,67};
 
-        int n = a.length;
+        System.out.println("The array is : "+Arrays.toString(arr));
 
-        //making a new array
-        int [] temp = new int[n];
-        int newLength =0;
+        int max = arr[0];
 
-        for(int i =0;i<n;i++){
-            boolean isDuplicate = false;
-
-            for(int k = 0;k<newLength;k++){
-                if(a[i]==temp[k]){
-                    isDuplicate = true;
-                    break;
-                }
-            }
-            if(!isDuplicate){
-                temp[newLength]=a[i];
-                newLength++;
+        for(int i = 0;i<arr.length;i++){
+            if(arr[i]>max){
+                max = arr[i-1];
             }
         }
-        System.out.println("The sorted array is : ");
-        for(int i = 0;i<newLength;i++){
-            System.out.print(temp[i]+" ");
-        }
+        System.out.println("The max second-element in the array is : "+max);
     }
 }
