@@ -10,18 +10,12 @@ public class array {
 
         System.out.println("The array is : "+Arrays.toString(arr));
 
-        int largest = Integer.MIN_VALUE;
-        int secondLargest = Integer.MIN_VALUE;
+        Arrays.sort(arr);
 
-        for (int num : arr) {
-            if (num > largest) {
-                secondLargest = largest;
-                largest = num;
-            } else if (num > secondLargest && num != largest) {
-                secondLargest = num;
-            }
+        int index = arr.length-1;
+        while (arr[index]==arr[arr.length-1]) {
+            index--;
         }
-
-        System.out.println("The second-largest element in the array is : " + secondLargest);
+        System.out.println("Second largest value : "+arr[index]);
     }
 }
