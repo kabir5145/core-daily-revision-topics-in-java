@@ -17,5 +17,15 @@ public class array {
             index--;
         }
         System.out.println("Second largest value : "+arr[index]);
+
+        //question 18: Find the second-smallest number.
+        Arrays.sort(arr);
+        int min = arr[0]+1;
+        for(int i =0;i<arr.length;i++){
+            if (arr[i]<min) {
+                min = arr[i+1];
+            }
+        }
+        System.out.println("The minimum number in the array is : "+min);
     }
 }
