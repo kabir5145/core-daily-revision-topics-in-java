@@ -4,15 +4,10 @@ import java.util.Scanner;
 
 public class string_question {
     public static void main(String[] args) {
-        //question 5 : Lexicographical String Comparison
-
-        String a = "hello how are you ?";
-        String b = "hello how are you ?";
-
-        int result = a.compareTo(b);
-
-        if (result == 0) {
-            System.out.println("yes");
-        }
+        //question 7 : Concatenate Two Strings
+        String str1 = "PHP Exercises and ";
+        String str2 = "Python Exercises.";
+        String str3 = str1.concat(str2);
+        System.out.println("The concatenated string is : "+str3);
     }
 }
