@@ -1,18 +1,17 @@
 package com.company;
 
-class cat{
+class Dog{
     String name;
-    int age;
+    String color;
 
-    public cat(){
-        System.out.println(this.name="kitten");
-        System.out.println(this.age=8);
+    Dog(String name,String color){
+        System.out.println(this.name = name);
+        System.out.println(this.color = color);
     }
 }
 public class Object_oriented_programming {
     public static void main(String[] args) {
-        //question 1
-        cat c = new cat();
-       // c.getInfo();
+        //question 2 : Parameterized Constructor.
+       Dog d = new Dog("Po","Black");
     }
 }
