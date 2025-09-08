@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class monday {
     public static void main(String[] args) {
-        //Question 1: Find Smallest Number Among Three.
+        //Question 2: Find The Average Of Three Number.
         Scanner sc = new Scanner(System.in);
         System.out.println("The first number : ");
         double x = sc.nextDouble();
@@ -15,6 +15,6 @@ public class monday {
         System.out.println("The smallest value is "+smallest(x,y,z)+"\n");
     }
     public static double smallest(double x, double y , double z){
-        return Math.min(Math.min(x,y),z);
+        return (x+y+z)/3;
     }
 }
