@@ -5,22 +5,21 @@ import java.util.*;
 
 public class array {
     public static void main(String[] args) {
-        //question 21 : Convert Arraylist to array.
+        //question 22 : Find the pairs with a given sum.
 
-        //Create an Arraylist of strings and initialize it with the contents of the array.
-        ArrayList<String> list = new ArrayList();
-        list.add("Python");
-        list.add("Java");
-        list.add("HTML");
-        list.add("CSS");
-        list.add("Java script");
-        System.out.println(list);
+        int []arr = {1,2,3,4,5,6,7,8};
+        Scanner sc = new Scanner(System.in);
 
-        String []s = new String[list.size()];
-        list.toArray(s);
+        int sum = sc.nextInt();
 
-        for(String string : s){
-            System.out.print(string+" ");
+        System.out.println("Pairs with sum " + sum + " are:");
+
+        for(int i = 0;i<arr.length;i++){
+            for(int k = 0;k<arr.length;k++){
+                if(arr[i]+arr[k] == sum){
+                    System.out.println("(" + arr[i] + ", " + arr[k] + ")");
+                }
+            }
         }
     }
 }
