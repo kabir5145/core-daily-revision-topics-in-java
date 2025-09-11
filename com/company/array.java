@@ -5,27 +5,30 @@ import java.util.*;
 
 public class array {
     public static void main(String[] args) {
-        //question 23 : Check if two arrays are equal.
+        //question 24 : Find missing number in array.
 
-        int[] arr_1 = {1, 2, 3, 4, 5, 6, 7, 8};
-        int[] arr_2 = {1, 2, 3, 4, 5, 6, 7, 8};
+        int []arr = {12,34,5,32,2,35};
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number you want to find in the array : ");
 
-        boolean isEqual = true;
+        int a = sc.nextInt();
 
-        if(arr_1.length != arr_2.length) {
-            isEqual = false;
-        }else {
-            for(int i = 0;i<arr_1.length;i++){
-                if(arr_1[i] != arr_2[i]){
-                    isEqual = false;
-                    break;
-                }
+        System.out.println("The array is : "+Arrays.toString(arr));
+
+        boolean found = true;
+
+        for(int i = 0;i<arr.length;i++){
+            if(arr[i]!=a){
+                found = false;
+            }else {
+                found = true;
+                break;
             }
         }
-        if(isEqual){
-            System.out.println("Both the arrays are equal !");
+        if(found){
+            System.out.println("The number is founded !");
         }else {
-            System.out.println("Two arrays are not equal !");
+            System.out.println("The number not found !");
         }
     }
 }
