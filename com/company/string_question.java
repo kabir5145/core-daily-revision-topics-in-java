@@ -1,13 +1,22 @@
 package com.company;
 
+import java.awt.*;
 import java.util.Scanner;
 
 public class string_question {
     public static void main(String[] args) {
-        //question 7 : Concatenate Two Strings
-        String str1 = "PHP Exercises and ";
-        String str2 = "Python Exercises.";
-        String str3 = str1.concat(str2);
-        System.out.println("The concatenated string is : "+str3);
+        //question 8 : Contains Specific Sequence.
+
+        System.out.println("Enter the String : ");
+
+        String s = "My name is kabir";
+
+        Scanner sc = new Scanner(System.in);
+        String g = sc.nextLine();
+
+        System.out.println("Original String is : "+s);
+        System.out.println("And the specific word wanted is : "+g);
+
+        System.out.println(s.contains(g));
     }
 }
