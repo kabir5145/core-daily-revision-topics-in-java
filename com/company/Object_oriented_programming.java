@@ -1,40 +1,37 @@
 package com.company;
 
-class Book{
-    String title;
-    String author;
-    int price;
+class Student {
+    int studentId;
+    String studentName;
+    double grade;
 
-   public Book(){
-        this.title = "Ice and snow";
-        this.author = "James Bond";
+    // Constructor 1
+    public Student() {
+        this(0, "Unknown", 0.0); // Calls Constructor 2
     }
-   public Book(String title , String author){
-        this.title = title;
-        this.author = author;
+
+    // Constructor 2
+    public Student(int studentId, String studentName) {
+        this(studentId, studentName, 0.0); // Calls Constructor 3
     }
-    public Book(String title , String author , int price){
-        this.title = title;
-        this.author = author;
-        this.price = price;
+
+    // Constructor 3 (main one)
+    public Student(int studentId, String studentName, double grade) {
+        this.studentId = studentId;
+        this.studentName = studentName;
+        this.grade = grade;
+
+        System.out.println("ID: " + this.studentId);
+        System.out.println("Name: " + this.studentName);
+        System.out.println("Grade: " + this.grade);
     }
 }
+
 public class Object_oriented_programming {
     public static void main(String[] args) {
-        //question 3 : Constructor Overloading.
-        Book b_1 = new Book();
-        System.out.println("The title is : "+b_1.title);
-        System.out.println("The author name is : "+b_1.author);
-        System.out.println("The price of the first book is : "+b_1.price);
-
-        Book b_2 = new Book("a","b");
-        System.out.println("Title : "+b_2.title);
-        System.out.println("Author : "+b_2.author);
-        System.out.println("Price : "+b_2.price);
-
-        Book b_3 = new Book("A","B",100);
-        System.out.println("Title : "+b_3.title);
-        System.out.println("Author : "+b_3.author);
-        System.out.println("Price : "+b_3.price);
+        // Question 4: Demonstrating constructor chaining
+        Student s1 = new Student();
+        Student s2 = new Student(101, "Kabir");
+        Student s3 = new Student(102, "Rohan", 99.0);
     }
 }
