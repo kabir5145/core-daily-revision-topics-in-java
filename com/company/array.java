@@ -5,30 +5,33 @@ import java.util.*;
 
 public class array {
     public static void main(String[] args) {
-        //question 24 : Find missing number in array.
+        //Question 25 : Common elements in three sorted arrays.
+        int [] arr_1 = {32,12,34,31,11};
+        Arrays.sort(arr_1);
+        int [] arr_2 = {11,12,54,98,76,67};
+        Arrays.sort(arr_2);
+        int [] arr_3 = {100,12,11,364,383};
+        Arrays.sort(arr_3);
 
-        int []arr = {12,34,5,32,2,35};
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the number you want to find in the array : ");
+        int i = 0;
+        int j = 0;
+        int k = 0;
 
-        int a = sc.nextInt();
+        System.out.print("Common elements: ");
 
-        System.out.println("The array is : "+Arrays.toString(arr));
-
-        boolean found = true;
-
-        for(int i = 0;i<arr.length;i++){
-            if(arr[i]!=a){
-                found = false;
-            }else {
-                found = true;
-                break;
+        while (i < arr_1.length && j < arr_2.length && k < arr_3.length) {
+            if (arr_1[i] == arr_2[j] && arr_2[j] == arr_3[k]) {
+                System.out.print(arr_1[i] + " ");
+                i++;
+                j++;
+                k++;
+            } else if (arr_1[i] < arr_2[j]) {
+                i++;
+            } else if (arr_2[j] < arr_3[k]) {
+                j++;
+            } else {
+                k++;
             }
-        }
-        if(found){
-            System.out.println("The number is founded !");
-        }else {
-            System.out.println("The number not found !");
         }
     }
 }
