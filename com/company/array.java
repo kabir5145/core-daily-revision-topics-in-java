@@ -5,16 +5,23 @@ import java.util.*;
 
 public class array {
     public static void main(String[] args) {
-    //Question 27 : Count even and odd numbers in array.
+        //Question 28 : Difference between max and min value.
+
         int []arr = {12,21,13,31,42};
 
-        int n = 0;
+        int max = arr[0];
+        int min = arr[0];
 
+        System.out.println("The array is : "+Arrays.toString(arr));
         for(int i = 0;i<arr.length;i++){
-            if(arr[i]%2==0)
-                n++;
+            if(arr[i]>max){
+                max = arr[i];
+            }else if(arr[i]<min){
+                min = arr[i];
             }
-            System.out.println("Number of even numbers are : "+n);
-            System.out.println("Number of odd numbers are : "+(arr.length - n) );
+          }
+        System.out.println("The maximum number in this array is : "+max);
+        System.out.println("The minimum number in this array is : "+min);
+        System.out.println("The difference between max and min value is : "+(max-min));
         }
     }
