@@ -5,19 +5,16 @@ import java.util.*;
 
 public class array {
     public static void main(String[] args) {
-     //Question 26: Move all zeros to array end.
-     int [] arr = {12,1,2,0,0,0,0,3,2,56,32};
-     int c = 0;
+    //Question 27 : Count even and odd numbers in array.
+        int []arr = {12,21,13,31,42};
 
-     for(int i = 0;i<arr.length;i++){
-         if(arr[i]!=0){
-             arr[c++]= arr[i];
-         }
-     }
-     while (c<arr.length){
-         arr[c++]=0;
-     }
-     for(int num : arr)
-         System.out.print( num+" ");
+        int n = 0;
+
+        for(int i = 0;i<arr.length;i++){
+            if(arr[i]%2==0)
+                n++;
+            }
+            System.out.println("Number of even numbers are : "+n);
+            System.out.println("Number of odd numbers are : "+(arr.length - n) );
+        }
     }
-}
