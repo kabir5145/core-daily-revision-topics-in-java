@@ -5,18 +5,12 @@ import java.util.Scanner;
 
 public class string_question {
     public static void main(String[] args) {
-        //question 8 : Contains Specific Sequence.
+        //Question 9 : Compare with Char Sequence.
+        String str_1 = "hello how are you ",str_2 = "Hello How Are You";
 
-        System.out.println("Enter the String : ");
+        CharSequence cs = "hello how are you ";
 
-        String s = "My name is kabir";
-
-        Scanner sc = new Scanner(System.in);
-        String g = sc.nextLine();
-
-        System.out.println("Original String is : "+s);
-        System.out.println("And the specific word wanted is : "+g);
-
-        System.out.println(s.contains(g));
+        System.out.println(str_1.contentEquals(cs));
+        System.out.println(str_2.contentEquals(cs));
     }
 }
