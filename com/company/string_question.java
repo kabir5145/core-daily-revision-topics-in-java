@@ -11,6 +11,5 @@ public class string_question {
         String str = String.copyValueOf(arr_num,1,3);
 
         System.out.println("The book contains "+str+" pages.");
-
     }
 }
