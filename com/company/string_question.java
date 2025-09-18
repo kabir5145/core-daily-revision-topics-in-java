@@ -5,12 +5,12 @@ import java.util.Scanner;
 
 public class string_question {
     public static void main(String[] args) {
-        //Question 10 : Compare with StringBuffer.
-        String str_1 = "hello how are you ",str_2 = "Hello How Are You";
+        //Question 11: String from Character Array.
+        char []arr_num = new char[]{'1','2','3','4'};
 
-        StringBuilder cs = new StringBuilder("hello how are you ");
+        String str = String.copyValueOf(arr_num,1,3);
 
-        System.out.println(str_1.contentEquals(cs));
-        System.out.println(str_2.contentEquals(cs));
+        System.out.println("The book contains "+str+" pages.");
+
     }
 }
