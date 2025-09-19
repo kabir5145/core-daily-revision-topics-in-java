@@ -6,23 +6,13 @@ import java.util.Scanner;
 
 public class loops_conditional {
     public static void main(String[] args) {
-        //Question 5: Weekday name from number
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the number : ");
+       //Question 6: Display First 10 Natural Numbers.
 
-        String dayName = "";
-        int day = sc.nextInt();
+        System.out.println("First 10 natural no. are : ");
 
-        switch (day){
-            case 1: dayName = "Monday";break;
-            case 2: dayName = "Tuesday";break;
-            case 3: dayName = "Wednesday";break;
-            case 4: dayName = "Thursday";break;
-            case 5: dayName = "Friday";break;
-            case 6: dayName = "Saturday";break;
-            case 7: dayName = "Sunday";break;
-            default:dayName="wrong!";
+        for(int i = 1;i<=10;i++){
+            System.out.print(i+" ");
         }
-        System.out.println("The day is : "+dayName);
+        System.out.println();
     }
 }
