@@ -6,17 +6,12 @@ import java.util.Scanner;
 
 public class loops_conditional {
     public static void main(String[] args) {
-       //Question 7: Sum of N natural number.
-
-        System.out.println("First 10 natural no. are : ");
-
-        int n = 0;
-        for(int i = 1;i<=10;i++){
-            System.out.println(i+" ");
-
-            n +=i;
-
-        }
-        System.out.println("The sum is : "+n);
+       //Question 8: Average of three number.
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+        int avg = (a+b+c)/3;
+        System.out.println(avg);
     }
 }
