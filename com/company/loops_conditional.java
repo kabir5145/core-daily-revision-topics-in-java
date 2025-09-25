@@ -12,7 +12,7 @@ public class loops_conditional {
         int b = sc.nextInt();
         System.out.println("Table to be calculated : "+b);
        for(int i =1;i<=a;i++){
-           System.out.println(i+" * "+b+" = "+i*2);
+           System.out.println(b+" * "+i+" = "+i*b);
        }
     }
 }
