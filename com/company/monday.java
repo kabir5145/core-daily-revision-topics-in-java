@@ -3,18 +3,22 @@ package  com.company;
 import java.util.Scanner;
 
 public class monday {
-    public static void main(String[] args) {
-        //Question 2: Find The Average Of Three Number.
-        Scanner sc = new Scanner(System.in);
-        System.out.println("The first number : ");
-        double x = sc.nextDouble();
-        System.out.println("The second number : ");
-        double y = sc.nextDouble();
-        System.out.println("The third number : ");
-        double z = sc.nextDouble();
-        System.out.println("The smallest value is "+smallest(x,y,z)+"\n");
+    public static String middleNum(String str){
+        int position;
+        int length;
+        if (str.length() % 2 == 0) {
+            position = str.length() / 2 - 1;
+            length = 2;
+        }
+        else {
+            position = str.length() / 2;
+            length = 1;
+        }
+        return str.substring(position, position + length);
     }
-    public static double smallest(double x, double y , double z){
-        return (x+y+z)/3;
+    public static void main(String[] args) {
+       //Question 3. Find Middle Character(s) of String
+        Scanner sc = new Scanner(System.in);
+        System.out.println(middleNum(sc.nextLine()));
     }
 }
