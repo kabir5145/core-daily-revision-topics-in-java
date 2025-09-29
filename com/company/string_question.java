@@ -6,10 +6,13 @@ import java.util.Scanner;
 
 public class string_question {
     public static void main(String[] args) {
-        //Question 13: String Length.
+        //gfg ques
+        //Question 1 : Reverse String
         Scanner sc = new Scanner(System.in);
-        String s = sc.nextLine();
-        System.out.println("The original string is : "+s);
-        System.out.println("The string length is : "+s.length());
+       String s = sc.nextLine();
+       char[]reverseString =s.toCharArray();
+       for(int i = reverseString.length-1;i>=0;i--){
+           System.out.print(reverseString[i]);
+       }
     }
 }
